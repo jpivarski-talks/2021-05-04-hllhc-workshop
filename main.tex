@@ -123,7 +123,7 @@ Most of the developers of Pythonic HEP software
 \item \textcolor{darkblue}{aim for small package granularity}, providing tools that address a well-defined class of problems at one level of abstraction,
 \item \textcolor{darkblue}{aim for interoperability} with each other and the larger Pythonic ecosystem,
 \item \textcolor{darkblue}{avoid overlapping functionality}, by communicating through HSF and IRIS-HEP channels,
-\item \textcolor{darkblue}{focus on domain-specific problems} that won't be addressed by non-HEP software {\it or} \textcolor{darkblue}{connecting HEP-specific tools} to the larger ecosystem.
+\item \textcolor{darkblue}{focus on domain-specific problems} that won't be addressed by non-HEP software {\it or} \textcolor{darkblue}{focus on connecting HEP-specific tools} to the larger ecosystem.
 \end{itemize}
 \end{minipage}
 \end{center}
@@ -145,7 +145,7 @@ Most of the developers of Pythonic HEP software
 %% \end{center}
 %% \end{frame}
 
-\begin{frame}{Scikit-HEP: clearinghouse for Pythonic HEP software}
+\begin{frame}{Scikit-HEP: a clearinghouse for Pythonic HEP software}
 \vspace{0.35 cm}
 \begin{columns}
 \column{0.8\linewidth}
@@ -160,29 +160,54 @@ a common brand for packages that work together and with the Python ecosystem.
 \end{frame}
 
 \begin{frame}{Scikit-HEP's 5 pillars today:}
-\vspace{0.3 cm}
+\vspace{0.2 cm}
 
-\begin{description}
+\begin{description}\setlength{\itemsep}{0.1 cm}
 \item[Simulation:] other than \mintinline{python}{numpythia} and \mintinline{python}{pyhepmc}, this is mostly left to non-Python packages (which fill files that can be read with Python).
 
 \item[Datasets:] \mintinline{python}{root-numpy}, \mintinline{python}{uproot}, \mintinline{python}{pylhe}, \mintinline{python}{awkward}, as well as \mintinline{python}{numpy} and \mintinline{python}{pandas}. Some use HDF5/\mintinline{python}{h5py} because of its recognition by ML tools.
 
 \item[Aggregations:] \mintinline{python}{boost-histogram}/\mintinline{python}{hist}, \mintinline{python}{coffea}, \mintinline{python}{fast-carpenter}.
 
-\item[Modeling:] by far, the most covered: \mintinline{python}{pyhf} (dozens of publications), \mintinline{python}{iminuit}, \mintinline{python}{zfit}, \mintinline{python}{hepstats}, \mintinline{python}{goofit}, \mintinline{python}{SModelS}, direct use of Pandas, ML\ldots
+\item[Modeling/fitting:] by far, the most covered: \mintinline{python}{pyhf} (dozens of publications), \mintinline{python}{iminuit}, \mintinline{python}{zfit}, \mintinline{python}{hepstats}, \mintinline{python}{goofit}, \mintinline{python}{SModelS}, direct use of Pandas, ML\ldots
 
 \item[Visualization:] most modeling tools output to \mintinline{python}{matplotlib}, \mintinline{python}{mplhep} is widely used as a dependency. \mintinline{python}{coffea}, \mintinline{python}{hist}, \mintinline{python}{histoprint}.
 
 \end{description}
 
-\vspace{0.25 cm}
+\vspace{0.15 cm}
 Should also add \textcolor{darkblue}{Distributed computing:} some \mintinline{python}{pyspark}, but more \mintinline{python}{dask}, often through \mintinline{python}{coffea} (future \mintinline{python}{coffea-casa}/ServiceX).
 
-\vspace{0.25 cm}
-Should also add \textcolor{darkblue}{Acceleration:} \mintinline{python}{numba} and \mintinline{python}{ROOT.RDataFrame}.
+\vspace{0.15 cm}
+Should also add \textcolor{darkblue}{Acceleration/JIT-compilation:} \mintinline{python}{numba}, \mintinline{python}{jax}, \mintinline{python}{ROOT.RDataFrame}.
 
-\vspace{0.25 cm}
-\textcolor{darkblue}{Other:} corrections in \mintinline{python}{coffea}, Lorentz vectors in \mintinline{python}{vector}, PDG in \mintinline{python}{particle}\ldots
+\vspace{0.15 cm}
+Should also add \textcolor{darkblue}{HEP domain-specific:} corrections in \mintinline{python}{coffea}, Lorentz vectors in \mintinline{python}{vector}, PDG in \mintinline{python}{particle}, jet clustering in \mintinline{python}{pyjet}\ldots
+\end{frame}
+
+\begin{frame}{Status/readiness for the HL-LHC:}
+\vspace{0.2 cm}
+
+\setbeamercolor{description body}{fg=gray}
+\setbeamercolor{alerted text}{fg=black}
+
+\begin{description}[<+-|alert@+>]
+\item[\textcolor{darkblue}{Simulations:}] don't need to be in Python (much like event reconstruction).
+
+\item[\textcolor{darkblue}{Datasets:}] mostly covered, especially as minimalist formats like NanoAOD catch on. Pythonic access to RNTuple will be needed and is in development.
+
+\item[\textcolor{darkblue}{Aggregations:}] need better interop between boost-histograms and ROOT histograms. Also, common usage is tending toward ``superhistograms,'' collections that describe systematic variations that ought to have shared metadata.
+
+\item[\textcolor{darkblue}{Modeling/fitting:}] \underline{well-covered:} needs are highly specialized and practitioners write their own packages. \mintinline{python}{scikit-hep/cookie} simplifies package-creation.
+
+\item[\textcolor{darkblue}{Visualization:}] in rapid development now, but mostly centralized in a few packages.
+
+\item[\textcolor{darkblue}{Distributed computing:}] experiments with a wide variety of options are mostly narrowing on Dask, though I think we should keep an eye on Ray. The Query System concept is in rapid development in IRIS-HEP/ServiceX.
+
+\item[\textcolor{darkblue}{Acceleration:}] Awkward Arrays and Lorentz vectors can be JIT-compiled with Numba; histogramming is next. Awkward Arrays should also become interoperable with RDataFrame so we have both Python and C++ JIT-compilation.
+
+\item[\textcolor{darkblue}{HEP domain-specific:}] \mintinline{python}{coffea} covers many odds and ends; could be better factorized.
+\end{description}
 \end{frame}
 
 
