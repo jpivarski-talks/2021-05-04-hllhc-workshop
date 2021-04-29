@@ -24,8 +24,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1516"
-     inkscape:window-height="963"
+     inkscape:window-width="1920"
+     inkscape:window-height="1136"
      id="namedview2161"
      showgrid="false"
      fit-margin-left="20"
@@ -33,12 +33,12 @@
      fit-margin-top="0"
      fit-margin-bottom="0"
      inkscape:zoom="0.74790141"
-     inkscape:cx="584.16043"
-     inkscape:cy="343.49222"
+     inkscape:cx="604.52358"
+     inkscape:cy="404.69501"
      inkscape:window-x="0"
      inkscape:window-y="27"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="matplotlib.axis_2" />
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2159" />
   <metadata
      id="metadata323">
     <rdf:RDF>
@@ -52,7 +52,7 @@
             <dc:title>Matplotlib v3.4.1, https://matplotlib.org/</dc:title>
           </cc:Agent>
         </dc:creator>
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -6749,69 +6749,79 @@
          style="stroke-linecap:butt;stroke-linejoin:round" />
     </clipPath>
   </defs>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:98.85300446px;line-height:1.10000002;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:6.17831278;stroke-linecap:butt;stroke-linejoin:round"
-     x="868.66882"
-     y="144.00905"
-     id="text14174"><tspan
-       sodipodi:role="line"
-       id="tspan14172"
-       style="stroke-width:6.17831278;stroke-linecap:butt;stroke-linejoin:round"
-       x="868.66882"
-       y="144.00905">}</tspan></text>
+  <g
+     aria-label="}"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.26204681px;line-height:1.10000002;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.32887793;stroke-linecap:butt;stroke-linejoin:round"
+     id="text14174">
+    <path
+       d="m 873.11573,158.5586 h 4.00731 c 5.96835,-0.0853 9.54935,-4.34836 9.37883,-11.25459 v -14.1535 c -0.0853,-7.58832 1.70524,-10.82828 6.47991,-11.76616 v -5.88308 c -4.77467,-0.93788 -6.56517,-4.17784 -6.47991,-11.76616 V 89.581606 c 0.17052,-6.906226 -3.41048,-11.169329 -9.37883,-11.254591 h -4.00731 v 5.542033 h 1.36419 c 4.2631,0.08526 5.45677,1.278931 5.45677,5.712558 v 15.432434 c 0.0853,7.07675 2.4726,11.6809 6.99149,13.4714 -4.51889,1.70524 -6.90623,6.30939 -6.99149,13.38614 v 15.43243 c 0,4.43363 -1.10841,5.6273 -5.45677,5.71256 h -1.36419 z"
+       style="stroke-width:5.32887793;stroke-linecap:butt;stroke-linejoin:round"
+       id="path1942" />
+  </g>
   <text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.43810272px;line-height:1.10000002;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.15238142;stroke-linecap:butt;stroke-linejoin:round"
      x="981.27228"
-     y="102.88457"
+     y="123.16648"
      id="text14178"><tspan
        sodipodi:role="line"
        style="stroke-width:1.15238142;stroke-linecap:butt;stroke-linejoin:round"
        x="981.27228"
-       y="102.88457"
-       id="tspan14180">More basic</tspan><tspan
-       sodipodi:role="line"
-       style="stroke-width:1.15238142;stroke-linecap:butt;stroke-linejoin:round"
-       x="981.27228"
        y="123.16648"
-       id="tspan14184">analysis tools than</tspan><tspan
-       sodipodi:role="line"
-       style="stroke-width:1.15238142;stroke-linecap:butt;stroke-linejoin:round"
-       x="981.27228"
-       y="143.44839"
-       id="tspan14190">machine learning</tspan></text>
-  <text
-     id="text1915"
-     y="333.41052"
-     x="1314.0397"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:149.53543091px;line-height:1.10000002;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:9.34596443;stroke-linecap:butt;stroke-linejoin:round"
-     xml:space="preserve"
-     transform="scale(0.66106739,1.5127051)"><tspan
-       y="333.41052"
-       x="1314.0397"
-       style="stroke-width:9.34596443;stroke-linecap:butt;stroke-linejoin:round"
-       id="tspan1913"
-       sodipodi:role="line">}</tspan></text>
+       id="tspan1925">Basic analysis tools</tspan></text>
   <text
      id="text1923"
-     y="430.30734"
+     y="442.43314"
      x="981.27228"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.43810272px;line-height:1.10000002;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.15238142;stroke-linecap:butt;stroke-linejoin:round"
      xml:space="preserve"><tspan
-       id="tspan1921"
-       y="430.30734"
-       x="981.27228"
-       style="stroke-width:1.15238142;stroke-linecap:butt;stroke-linejoin:round"
-       sodipodi:role="line">HEP analysis tools</tspan><tspan
-       y="450.58926"
+       y="442.43314"
        x="981.27228"
        style="stroke-width:1.15238142;stroke-linecap:butt;stroke-linejoin:round"
        sodipodi:role="line"
-       id="tspan1930">or tools</tspan><tspan
-       y="470.87115"
+       id="tspan1932">Tools developed</tspan><tspan
+       y="462.71506"
        x="981.27228"
        style="stroke-width:1.15238142;stroke-linecap:butt;stroke-linejoin:round"
        sodipodi:role="line"
-       id="tspan1932">developed in HEP</tspan></text>
+       id="tspan1963">in HEP</tspan></text>
+  <g
+     aria-label="}"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.26204681px;line-height:1.10000002;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.32887793;stroke-linecap:butt;stroke-linejoin:round"
+     id="text1939">
+    <path
+       d="m 873.11573,339.08128 h 4.00731 c 5.96835,-0.0853 9.54935,-4.34836 9.37883,-11.25459 v -63.6535 c -0.0853,-7.58832 1.70524,-10.82828 6.47991,-11.76616 v -5.88308 c -4.77467,-0.93788 -6.56517,-4.17784 -6.47991,-11.76616 v -63.6535 c 0.17052,-6.90623 -3.41048,-11.16933 -9.37883,-11.25459 h -4.00731 v 5.54203 h 1.36419 c 4.2631,0.0853 5.45677,1.27893 5.45677,5.71256 v 64.93243 c 0.0853,7.07675 2.4726,11.6809 6.99149,13.4714 -4.51889,1.70524 -6.90623,6.30939 -6.99149,13.38614 v 64.93243 c 0,4.43363 -1.10841,5.6273 -5.45677,5.71256 h -1.36419 z"
+       style="stroke-width:5.32887793;stroke-linecap:butt;stroke-linejoin:round"
+       id="path1945"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccccscccsccc" />
+  </g>
+  <g
+     id="g1950"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.26204681px;line-height:1.10000002;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:5.32887793;stroke-linecap:butt;stroke-linejoin:round"
+     aria-label="}"
+     transform="translate(4.5754266e-7,275.66061)">
+    <path
+       id="path1948"
+       style="stroke-width:5.32887793;stroke-linecap:butt;stroke-linejoin:round"
+       d="m 873.11573,262.0586 h 4.00731 c 5.96835,-0.0853 9.54935,-4.34836 9.37883,-11.25459 v -65.1535 c -0.0853,-7.58832 1.70524,-10.82828 6.47991,-11.76616 v -5.88308 c -4.77467,-0.93788 -6.56517,-4.17784 -6.47991,-11.76616 V 89.581606 c 0.17052,-6.906226 -3.41048,-11.169329 -9.37883,-11.254591 h -4.00731 v 5.542033 h 1.36419 c 4.2631,0.08526 5.45677,1.278931 5.45677,5.712558 v 67.932434 c 0.0853,7.07675 2.4726,11.6809 6.99149,13.4714 -4.51889,1.70524 -6.90623,6.30939 -6.99149,13.38614 v 66.43243 c 0,4.43363 -1.10841,5.6273 -5.45677,5.71256 h -1.36419 z"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccccscccsccc" />
+  </g>
+  <text
+     id="text1954"
+     y="245.83319"
+     x="981.27228"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.43810272px;line-height:1.10000002;font-family:'Nimbus Sans';-inkscape-font-specification:'Nimbus Sans';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.15238142;stroke-linecap:butt;stroke-linejoin:round"
+     xml:space="preserve"><tspan
+       id="tspan1952"
+       y="245.83319"
+       x="981.27228"
+       style="stroke-width:1.15238142;stroke-linecap:butt;stroke-linejoin:round"
+       sodipodi:role="line">Machine learning</tspan><tspan
+       y="266.11511"
+       x="981.27228"
+       style="stroke-width:1.15238142;stroke-linecap:butt;stroke-linejoin:round"
+       sodipodi:role="line"
+       id="tspan1956">and stuff</tspan></text>
 </svg>
