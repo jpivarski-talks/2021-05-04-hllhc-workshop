@@ -56,6 +56,13 @@
 
 % START START START START START START START START START START START START START
 
+\begin{frame}{}
+\LARGE
+\begin{center}
+\textcolor{darkblue}{Part 1: Trends in data analysis software}
+\end{center}
+\end{frame}
+
 \begin{frame}{Pythonic data analysis in the HL-LHC era?}
 \vspace{0.25 cm}
 \begin{center}
@@ -80,7 +87,7 @@ Primary language of GitHub repos created by users who forked CMSSW:
 \end{columns}
 \end{frame}
 
-\begin{frame}{Pythonic analysis is mainstream; trend preceded Uproot}
+\begin{frame}{Pythonic analysis is mainstream, and the trend preceded Uproot}
 \vspace{0.35 cm}
 
 GitHub repos matching search strings: Pythonic analysis is as common as ``TFile''.
@@ -96,5 +103,90 @@ GitHub repos matching search strings: Pythonic analysis is as common as ``TFile'
 \includegraphics[width=\linewidth]{lhlhc-familiarity-with-packages.pdf}
 \end{columns}
 \end{frame}
+
+\begin{frame}{}
+\LARGE
+\begin{center}
+\textcolor{darkblue}{Part 2: Maturity of Python tools}
+\end{center}
+\end{frame}
+
+\begin{frame}{Shared vision}
+\vspace{0.4 cm}
+\begin{center}
+\begin{minipage}{0.83\linewidth}
+\large
+Most of the developers of Pythonic HEP software
+
+\vspace{0.25 cm}
+\begin{itemize}\setlength{\itemsep}{0.2 cm}
+\item \textcolor{darkblue}{aim for small package granularity}, providing tools that address a well-defined class of problems at one level of abstraction,
+\item \textcolor{darkblue}{aim for interoperability} with each other and the larger Pythonic ecosystem,
+\item \textcolor{darkblue}{avoid overlapping functionality}, by communicating through HSF and IRIS-HEP channels,
+\item \textcolor{darkblue}{focus on domain-specific problems} that won't be addressed by non-HEP software {\it or} \textcolor{darkblue}{connecting HEP-specific tools} to the larger ecosystem.
+\end{itemize}
+\end{minipage}
+\end{center}
+\end{frame}
+
+%% \begin{frame}{Unshared vision}
+%% \vspace{0.4 cm}
+%% \begin{center}
+%% \begin{minipage}{0.83\linewidth}
+%% \large
+%% Some people in this area are trying to replace ROOT.
+
+%% \vspace{0.4 cm}
+%% Others (myself included) are connect everything to everything, so that there are no artificial boundaries in data analysis.
+
+%% \vspace{0.4 cm}
+%% End-user analysis is a decentralized world. Small, interoperating tools have historically worked well in that environment.
+%% \end{minipage}
+%% \end{center}
+%% \end{frame}
+
+\begin{frame}{Scikit-HEP: clearinghouse for Pythonic HEP software}
+\vspace{0.35 cm}
+\begin{columns}
+\column{0.8\linewidth}
+\includegraphics[width=\linewidth]{early-scikit-hep.png}
+\column{0.27\linewidth}
+
+Originally conceived as a core package with ``affiliates,'' now it's just the affiliates:
+
+\vspace{0.2 cm}
+a common brand for packages that work together and with the Python ecosystem.
+\end{columns}
+\end{frame}
+
+\begin{frame}{Scikit-HEP's 5 pillars today:}
+\vspace{0.3 cm}
+
+\begin{description}
+\item[Simulation:] other than \mintinline{python}{numpythia} and \mintinline{python}{pyhepmc}, this is mostly left to non-Python packages (which fill files that can be read with Python).
+
+\item[Datasets:] \mintinline{python}{root-numpy}, \mintinline{python}{uproot}, \mintinline{python}{pylhe}, \mintinline{python}{awkward}, as well as \mintinline{python}{numpy} and \mintinline{python}{pandas}. Some use HDF5/\mintinline{python}{h5py} because of its recognition by ML tools.
+
+\item[Aggregations:] \mintinline{python}{boost-histogram}/\mintinline{python}{hist}, \mintinline{python}{coffea}, \mintinline{python}{fast-carpenter}.
+
+\item[Modeling:] by far, the most covered: \mintinline{python}{pyhf} (dozens of publications), \mintinline{python}{iminuit}, \mintinline{python}{zfit}, \mintinline{python}{hepstats}, \mintinline{python}{goofit}, \mintinline{python}{SModelS}, direct use of Pandas, ML\ldots
+
+\item[Visualization:] most modeling tools output to \mintinline{python}{matplotlib}, \mintinline{python}{mplhep} is widely used as a dependency. \mintinline{python}{coffea}, \mintinline{python}{hist}, \mintinline{python}{histoprint}.
+
+\end{description}
+
+\vspace{0.25 cm}
+Should also add \textcolor{darkblue}{Distributed computing:} some \mintinline{python}{pyspark}, but more \mintinline{python}{dask}, often through \mintinline{python}{coffea} (future \mintinline{python}{coffea-casa}/ServiceX).
+
+\vspace{0.25 cm}
+Should also add \textcolor{darkblue}{Acceleration:} \mintinline{python}{numba} and \mintinline{python}{ROOT.RDataFrame}.
+
+\vspace{0.25 cm}
+\textcolor{darkblue}{Other:} corrections in \mintinline{python}{coffea}, Lorentz vectors in \mintinline{python}{vector}, PDG in \mintinline{python}{particle}\ldots
+\end{frame}
+
+
+
+
 
 \end{document}
