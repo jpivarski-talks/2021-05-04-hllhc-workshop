@@ -32,7 +32,7 @@
 \definecolor{darkgreen}{rgb}{0,0.6,0}
 \definecolor{mauve}{rgb}{0.58,0,0.82}
 
-\title[2021-05-04-hllhc-workshop]{Python Data Science}
+\title[2021-05-04-hllhc-workshop]{Pythonic Data Analysis}
 \author{Jim Pivarski}
 \institute{Princeton University -- IRIS-HEP}
 \date{May the 4$^{\mbox{\scriptsize th}}$ be with you}
@@ -251,9 +251,39 @@ Should also add \textcolor{darkblue}{HEP domain-specific:} corrections in \minti
 \end{columns}
 \end{frame}
 
+\begin{frame}{Conclusions}
+\vspace{0.5 cm}
+\large
 
+The question is not quite, ``Will everything be ready for the HL-LHC?''
 
+\vspace{0.5 cm}
+Many pieces of this end-user analysis ecosystem are in-use \underline{\it now}.
 
+\vspace{0.2 cm}
+\begin{itemize}
+\item I personally know of 5 analyses using Python almost exclusively.
+\item There is a wave of such analyses gradually approaching publication.
+\end{itemize}
 
+\vspace{0.6 cm}
+From current trends, it looks like Pythonic
+
+analysis will predominate in Run 3 or stay
+
+evenly mixed with C++, as it is today.
+
+\vspace{-2.25 cm}
+\hfill \mbox{\includegraphics[width=0.55\linewidth]{lhlhc-github-overlay-lin.pdf}\hspace{-1 cm}}
+
+\vspace{-0.5 cm}
+%% \vspace{0.5 cm}
+%% The ``interoperating, small packages'' model has considerable flexibility, for
+%% \begin{itemize}
+%% \item addressing new needs (e.g.\ \mintinline{python}{histoprint}),
+%% \item letting unnecessary projects go (e.g.\ MC in Python), and
+%% \item taking over maintenance (e.g.\ current revamp of \mintinline{python}{pyjet}).
+%% \end{itemize}
+\end{frame}
 
 \end{document}
