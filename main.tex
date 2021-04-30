@@ -210,6 +210,48 @@ Should also add \textcolor{darkblue}{HEP domain-specific:} corrections in \minti
 \end{description}
 \end{frame}
 
+\begin{frame}{Breakdown by strategy}
+\vspace{0.3 cm}
+\begin{columns}[t]
+\column{0.33\linewidth}
+\underline{\large Domain-specific stuff we do}
+
+\vspace{0.15 cm}
+\begin{itemize}
+\item (super)histograms as fillable objects
+\item HEP-style plots (pulls, Brazil, efficiency\ldots)
+\item ansatz fitting, limit setting, discovery significance
+\item applying corrections, clustering, Lorentz vector manipulation
+\end{itemize}
+
+\column{0.33\linewidth}
+\underline{\large Connections to externals}
+
+\vspace{0.15 cm}
+\begin{itemize}
+\item ROOT, LHE files $\leftrightarrow$ arrays, Pandas, ML
+\item using ML packages to do HEP fits: \mintinline{python}{pyhf}/\mintinline{python}{combinetf}
+\item extending Numba for jagged arrays, Lorentz vectors, histogramming
+\item events $\to$ histograms workflow in distributed computing frameworks
+\item building Query Systems out of standard parts
+\end{itemize}
+
+\column{0.33\linewidth}
+\underline{\large External libraries we use}
+
+\vspace{0.15 cm}
+\begin{itemize}
+\item machine learning
+\item distributed computing
+\item JIT-compilation
+\item autodifferentiation
+\item interactive notebooks
+\end{itemize}
+
+\end{columns}
+\end{frame}
+
+
 
 
 
