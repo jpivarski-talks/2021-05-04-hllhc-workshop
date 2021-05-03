@@ -60,6 +60,9 @@
 \LARGE
 \begin{center}
 \textcolor{darkblue}{Part 1: Trends in data analysis software}
+
+\vspace{0.5 cm}
+\textcolor{lightgray}{Part 2: Status of Pythonic HEP software}
 \end{center}
 \end{frame}
 
@@ -70,7 +73,7 @@
 \end{center}
 \end{frame}
 
-\begin{frame}{Physicists have been moving to Python on their own}
+\begin{frame}{What were the physicists doing in this decade?}
 \vspace{0.35 cm}
 
 Primary language of GitHub repos created by users who forked CMSSW:
@@ -107,11 +110,14 @@ GitHub repos matching search strings: Pythonic analysis is as common as ``TFile'
 \begin{frame}{}
 \LARGE
 \begin{center}
-\textcolor{darkblue}{Part 2: Maturity of Python tools}
+\textcolor{lightgray}{Part 1: Trends in data analysis software}
+
+\vspace{0.5 cm}
+\textcolor{darkblue}{Part 2: Status of Pythonic HEP software}
 \end{center}
 \end{frame}
 
-\begin{frame}{Shared vision}
+\begin{frame}{Not a single group, but mostly shared vision}
 \vspace{0.4 cm}
 \begin{center}
 \begin{minipage}{0.83\linewidth}
@@ -206,7 +212,7 @@ Should also add \textcolor{darkblue}{HEP domain-specific:} corrections in \minti
 
 \item[\textcolor{darkblue}{Acceleration:}] Awkward Arrays and Lorentz vectors can be JIT-compiled with Numba; histogramming is next. Awkward Arrays should also become interoperable with RDataFrame so we have both Python and C++ JIT-compilation.
 
-\item[\textcolor{darkblue}{HEP domain-specific:}] \mintinline{python}{coffea} covers many odds and ends; could be better factorized.
+\item[\textcolor{darkblue}{HEP domain-specific:}] \mintinline{python}{coffea} covers each use-case before it gets its own library.
 \end{description}
 \end{frame}
 
@@ -258,7 +264,7 @@ Should also add \textcolor{darkblue}{HEP domain-specific:} corrections in \minti
 The question is not quite, ``Will the whole ecosystem be ready for the HL-LHC?''
 
 \vspace{0.25 cm}
-Many pieces are in-use \underline{\it now}, and they're growing to fill real analysis needs.
+Many pieces are in-use \underline{\it now}, and they're growing to fill real analysis needs \underline{\it now}.
 
 \vspace{0.25 cm}
 \begin{itemize}\setlength{\itemsep}{0.25 cm}
